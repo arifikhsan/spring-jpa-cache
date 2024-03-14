@@ -1,11 +1,12 @@
-package com.example.springjavanotestemplate.controller;
+package com.example.springjpacache.controller;
 
-import com.example.springjavanotestemplate.entity.NoteEntity;
-import com.example.springjavanotestemplate.service.NoteService;
+import com.example.springjpacache.entity.NoteEntity;
+import com.example.springjpacache.service.NoteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,5 +19,10 @@ public class NoteController {
     @GetMapping
     public Page<NoteEntity> getNotes(Pageable pageable) {
         return service.findAll(pageable);
+    }
+
+    @GetMapping("{id}")
+    public NoteEntity getNote(@PathVariable Long id) {
+        return service.findOne(id);
     }
 }

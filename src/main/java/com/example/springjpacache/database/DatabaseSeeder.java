@@ -1,4 +1,4 @@
-package com.example.springjavanotestemplate.database;
+package com.example.springjpacache.database;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;

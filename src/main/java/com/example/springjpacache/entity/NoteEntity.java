@@ -1,15 +1,15 @@
-package com.example.springjavanotestemplate.entity;
+package com.example.springjpacache.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import lombok.extern.jackson.Jacksonized;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Getter
 @Setter
+@Builder
+@Jacksonized
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity(name = "notes")

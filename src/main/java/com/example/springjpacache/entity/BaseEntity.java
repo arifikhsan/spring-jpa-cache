@@ -1,4 +1,4 @@
-package com.example.springjavanotestemplate.entity;
+package com.example.springjpacache.entity;
 
 import lombok.Getter;
 import lombok.Setter;

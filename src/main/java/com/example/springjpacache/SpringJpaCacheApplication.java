@@ -1,14 +1,16 @@
-package com.example.springjavanotestemplate;
+package com.example.springjpacache;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 @SuppressWarnings("resource")
+@EnableCaching
 @SpringBootApplication
-public class SpringJavaNotesTemplateApplication {
+public class SpringJpaCacheApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringJavaNotesTemplateApplication.class, args);
+        SpringApplication.run(SpringJpaCacheApplication.class, args);
     }
 
 }
